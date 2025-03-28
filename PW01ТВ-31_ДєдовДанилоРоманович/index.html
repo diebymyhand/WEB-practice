@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Практична 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Практична робота №1 Варіант 5</h1>
+        <div>Навігація по завданнях:</div>
+        <nav class="menu">
+            <ul>
+                <li><a class="top" href="#task1">Завдання 1</a></li>
+                <li><a class="top" href="#task2">Завдання 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="task" id="task1">
+            <h2>Завдання 1</h2>
+            <p class="description"><strong><font size="4">Веб калькулятор для розрахунку складу сухої та горючої маси палива та
+                нижчої теплоти згоряння для робочої, сухої та горючої маси за заданим складом компонентів
+                палива, що задаються у вигляді значень окремих компонентів.</font></strong></p>
+
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label>Водень H<sup>p</sup> (%)</td>
+                                <td><input type="number" id="hydrogen" placeholder="2.8" required></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Вуглець C<sup>p</sup> (%)</td>
+                                <td><input type="number" id="carbon" placeholder="72.3" required></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Сірка S<sup>p</sup> (%)</td>
+                                <td><input type="number" id="sulfur" placeholder="2" required></label></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label>Азот N<sup>p</sup> (%)</td>
+                                <td><input type="number" id="nitrogen" placeholder="1.1" required></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Кисень O<sup>p</sup> (%)</td>
+                                <td><input type="number" id="oxygen" placeholder="1.3" required></label></td>
+                            </tr>
+                            <tr>
+                                <td><label>Волога W<sup>p</sup> (%)</td>
+                                <td><input type="number" id="moisture" placeholder="5.5" required></label></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label>Зола A<sup>p</sup> (%)</td>
+                                <td><input type="number" id="ash" placeholder="15" required></label></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="button" onclick="calculate_task1()">Розрахувати</button>
+                
+            <div id="result"></div>
+        </section>
+
+        <section class="task" id="task2">
+            <h2>Завдання 2</h2>
+            <p class="description"><strong><font size="4">Веб калькулятор для перерахунку елементарного складу та нижчої теплоти
+                згоряння мазуту на робочу масу для складу горючої маси мазуту, що задається наступними
+                параметрами: вуглець, %; водень, %; кисень, %; сірка, %; нижча теплота згоряння горючої маси
+                мазуту, МДж/кг; вологість робочої маси палива, %; зольність сухої маси, %; вміст ванадію (V),
+                мг/кг.</font></strong></p>
+        
+            <table>
+                <tr>
+                    <td><label>Вуглець (%)</label><input type="number" id="carbon_mazut" placeholder="72.3" required></td>
+                </tr>
+                <tr>
+                    <td><label>Водень (%)</label><input type="number" id="hydrogen_mazut" placeholder="2.8" required></td>
+                </tr>
+                <tr>
+                    <td><label>Кисень (%)</label><input type="number" id="oxygen_mazut" placeholder="1.3" required></td>
+                </tr>
+                <tr>
+                    <td><label>Сірка (%)</label><input type="number" id="sulfur_mazut" placeholder="2" required></td>
+                </tr>
+                <tr>
+                    <td><label>Нижча теплота згоряння, МДж/кг</label><input type="number" id="q_hg_mazut" placeholder="42.0" required></td>
+                </tr>
+                <tr>
+                    <td><label>Вологість робочої маси, %</label><input type="number" id="moisture_mazut" placeholder="5.5" required></td>
+                </tr>
+                <tr>
+                    <td><label>Зольність сухої маси, %</label><input type="number" id="ash_mazut" placeholder="15" required></td>
+                </tr>
+                <tr>
+                    <td><label>Вміст ванадію (V), мг/кг</label><input type="number" id="vanadium_mazut" placeholder="333.3" required></td>
+                </tr>
+            </table>
+        
+            <button type="button" onclick="calculate_task2()">Розрахувати</button>
+            
+            <div id="result_task2"></div>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

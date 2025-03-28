@@ -1,0 +1,26 @@
+header {
+    background-color: #191919;
+    color: #ffffff;
+    width: 100vw;
+    padding: 10px;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+.description {
+    max-width: 60%;
+    text-align: justify;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.task {
+    margin-left: 120px;
+}
+
+a {
+    color: #ffffff;
+}
