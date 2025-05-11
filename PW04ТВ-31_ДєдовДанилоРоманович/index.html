@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Практична 4</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Практична робота №4</h1>
+            <h2>Варіант 5</h2>
+        </header>
+
+        <main>
+            <div id="result" class="container hidden"></div>
+
+            <div id="inputs" class="container">
+                <div class="title">Калькулятор</div>
+                <span class="tab" onclick="showCategory('cat7.1')">7.1</span>
+                <span class="tab" onclick="showCategory('cat7.2')">7.2</span>
+                <span class="tab" onclick="showCategory('cat7.4')">7.4</span>
+
+                <!-- 7.1 -->
+                <div id="cat7.1" class="category hidden">
+                    <label>Струм КЗ Iк (А):</label>
+                    <input type="number" id="Ik" class="input" value="2500">
+
+                    <label>Фікт. час вимикання струму tф (с):</label>
+                    <input type="number" id="tf" class="input" value="2.5">
+
+                    <label>Розрахункове навантаження Sm (кВА):</label>
+                    <input type="number" id="Sm" class="input" value="1300">
+
+                    <label>Час експлуатації Tm (год):</label>
+                    <input type="number" id="Tm" class="input" value="4000">
+
+                    <button class="button" onclick="calculate_71()">Розрахувати</button>
+                </div>
+
+
+                <!-- 7.2 -->
+                <div id="cat7.2" class="category hidden">
+                    <label>Напруга (U):</label>
+                    <input type="number" id="voltage" class="input" value="10">
+
+                    <label>Потужність (Sk):</label>
+                    <input type="number" id="Sk" class="input" value="200">
+
+                    <button type="button" class="button" onclick="calculate_72()">Розрахувати</button>
+                </div>
+
+                <!-- 7.4 -->
+                <div id="cat7.4" class="category hidden">
+                    <label for="rcn">Опір в нормальному режимі (R<sub>c,н</sub>), Ом:</label>
+                    <input type="number" id="rcn" class="input" value="10.65">
+
+                    <label for="xcn">Опір в нормальному режимі (X<sub>c,н</sub>), Ом:</label>
+                    <input type="number" id="xcn" class="input" value="24.02">
+
+                    <label for="rcmin">Опір в мінімальному режимі (R<sub>c,min</sub>), Ом:</label>
+                    <input type="number" id="rcmin" class="input" value="34.88">
+
+                    <label for="xcmin">Опір в мінімальному режимі (X<sub>c,min</sub>), Ом:</label>
+                    <input type="number" id="xcmin" class="input" value="65.68">
+
+                    <button type="button" class="button" onclick="calculate_74()">Розрахувати</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Практична 3</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Практична робота №3</h1>
+            <h2>Варіант 5</h2>
+        </header>
+
+        <main>
+            <div id="result" class="container hidden"></div>
+
+            <div id="inputs" class="container">
+                <div class="title">Калькулятор</div>
+
+                <label for="power">Потужність:</label>
+                <input type="number" id="power" class="input">
+
+                <label for="sigma1">Похибка 1:</label>
+                <input type="number" id="sigma1" class="input">
+
+                <label for="sigma2">Похибка 2:</label>
+                <input type="number" id="sigma2" class="input">
+
+                <label for="cost">Вартість енергії (грн/кВт*год):</label>
+                <input type="number" id="cost" class="input">
+    
+                <button type="button" class="button" onclick="calculate()">Розрахувати</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
