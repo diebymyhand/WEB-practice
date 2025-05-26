@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Практична 5</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Практична робота №5</h1>
+            <h2>Варіант 5</h2>
+        </header>
+
+        <main>
+            <div id="result" class="container hidden"></div>
+
+            <div id="inputs" class="container">
+                <div class="title">Калькулятор</div>
+                <span class="tab" onclick="showCategory('cat3.1')">3.1</span>
+                <span class="tab" onclick="showCategory('cat3.2')">3.2</span>
+
+                <div id="cat3.1" class="category">
+                    <label>Обладнання 1:</label>
+                    <select id="equipment1" class="input">
+                        <option value="PL-110">ПЛ-110 кВ</option>
+                        <option value="PL-35">ПЛ-35 кВ</option>
+                        <option value="PL-10">ПЛ-10 кВ</option>
+                        <option value="KL-10_transh">КЛ-10 (траншея)</option>
+                        <option value="KL-10_cabel">КЛ-10 (кабельний канал)</option>
+                        <option value="T-110">T-110 кВ</option>
+                        <option value="T-35">T-35 кВ</option>
+                        <option value="T-10_cabel">T-10 кВ (кабельна мережа 10 кВ)</option>
+                        <option value="T-10_air">T-10 кВ (повітряна мережа 10 кВ)</option>
+                        <option value="B-110_elegas">B-110 кВ (елегазовий)</option>
+                        <option value="B-10_lowoil">B-10 кВ (малооливний)</option>
+                        <option value="B-10_vacuum">B-10 кВ (вакуумний)</option>
+                        <option value="tires">Збірні шини 10 кВ</option>
+                    </select>
+
+                    <label>Обладнання 2:</label>
+                    <select id="equipment2" class="input">
+                        <option value="PL-110">ПЛ-110 кВ</option>
+                        <option value="PL-35">ПЛ-35 кВ</option>
+                        <option value="PL-10">ПЛ-10 кВ</option>
+                        <option value="KL-10_transh">КЛ-10 (траншея)</option>
+                        <option value="KL-10_cabel">КЛ-10 (кабельний канал)</option>
+                        <option value="T-110">T-110 кВ</option>
+                        <option value="T-35">T-35 кВ</option>
+                        <option value="T-10_cabel">T-10 кВ (кабельна мережа 10 кВ)</option>
+                        <option value="T-10_air">T-10 кВ (повітряна мережа 10 кВ)</option>
+                        <option value="B-110_elegas">B-110 кВ (елегазовий)</option>
+                        <option value="B-10_lowoil">B-10 кВ (малооливний)</option>
+                        <option value="B-10_vacuum">B-10 кВ (вакуумний)</option>
+                        <option value="tires">Збірні шини 10 кВ</option>
+                    </select>
+
+                    <label>Довжина:</label>
+                    <input type="number" id="length" class="input" value="10">
+
+                    <label>Обладнання 3:</label>
+                    <select id="equipment3" class="input">
+                        <option value="PL-110">ПЛ-110 кВ</option>
+                        <option value="PL-35">ПЛ-35 кВ</option>
+                        <option value="PL-10">ПЛ-10 кВ</option>
+                        <option value="KL-10_transh">КЛ-10 (траншея)</option>
+                        <option value="KL-10_cabel">КЛ-10 (кабельний канал)</option>
+                        <option value="T-110">T-110 кВ</option>
+                        <option value="T-35">T-35 кВ</option>
+                        <option value="T-10_cabel">T-10 кВ (кабельна мережа 10 кВ)</option>
+                        <option value="T-10_air">T-10 кВ (повітряна мережа 10 кВ)</option>
+                        <option value="B-110_elegas">B-110 кВ (елегазовий)</option>
+                        <option value="B-10_lowoil">B-10 кВ (малооливний)</option>
+                        <option value="B-10_vacuum">B-10 кВ (вакуумний)</option>
+                        <option value="tires">Збірні шини 10 кВ</option>
+                    </select>
+
+                    <label>Обладнання 4:</label>
+                    <select id="equipment4" class="input">
+                        <option value="PL-110">ПЛ-110 кВ</option>
+                        <option value="PL-35">ПЛ-35 кВ</option>
+                        <option value="PL-10">ПЛ-10 кВ</option>
+                        <option value="KL-10_transh">КЛ-10 (траншея)</option>
+                        <option value="KL-10_cabel">КЛ-10 (кабельний канал)</option>
+                        <option value="T-110">T-110 кВ</option>
+                        <option value="T-35">T-35 кВ</option>
+                        <option value="T-10_cabel">T-10 кВ (кабельна мережа 10 кВ)</option>
+                        <option value="T-10_air">T-10 кВ (повітряна мережа 10 кВ)</option>
+                        <option value="B-110_elegas">B-110 кВ (елегазовий)</option>
+                        <option value="B-10_lowoil">B-10 кВ (малооливний)</option>
+                        <option value="B-10_vacuum">B-10 кВ (вакуумний)</option>
+                        <option value="tires">Збірні шини 10 кВ</option>
+
+                    </select>
+
+                    <label>Обладнання 5:</label>
+                    <select id="equipment5" class="input">
+                        <option value="PL-110">ПЛ-110 кВ</option>
+                        <option value="PL-35">ПЛ-35 кВ</option>
+                        <option value="PL-10">ПЛ-10 кВ</option>
+                        <option value="KL-10_transh">КЛ-10 (траншея)</option>
+                        <option value="KL-10_cabel">КЛ-10 (кабельний канал)</option>
+                        <option value="T-110">T-110 кВ</option>
+                        <option value="T-35">T-35 кВ</option>
+                        <option value="T-10_cabel">T-10 кВ (кабельна мережа 10 кВ)</option>
+                        <option value="T-10_air">T-10 кВ (повітряна мережа 10 кВ)</option>
+                        <option value="B-110_elegas">B-110 кВ (елегазовий)</option>
+                        <option value="B-10_lowoil">B-10 кВ (малооливний)</option>
+                        <option value="B-10_vacuum">B-10 кВ (вакуумний)</option>
+                        <option value="tires">Збірні шини 10 кВ</option>
+                    </select>
+
+                    <label>Кількість обладнання 5:</label>
+                    <input type="number" id="equipment5_quantity" class="input" value="6">
+
+                    <button class="button" onclick="calculateReliability()">Розрахувати</button>
+
+                    <div id="result"></div>
+                </div>
+
+                <div id="cat3.2" class="category hidden">
+                    <label for="zpera">Зпер.а</label>
+                    <input type="number" id="zpera" class="input" value="23.6">
+                    
+                    <label for="zperp">Зпер.п</label>
+                    <input type="number" id="zperp" class="input" value="17.6">
+                
+                    <button class="button" onclick="calculateLosses()">Розрахувати</button>
+
+                    <div id="result"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
